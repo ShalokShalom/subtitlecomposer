@@ -41,6 +41,11 @@ public:
 		return true;
 	}
 
+	virtual bool readBinary(Subtitle &, const QUrl &)
+	{
+		return false;
+	}
+
 protected:
 	virtual bool parseSubtitles(Subtitle &subtitle, const QString &data) const = 0;
 
